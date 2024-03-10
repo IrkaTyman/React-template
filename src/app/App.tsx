@@ -1,14 +1,13 @@
 import '@shared/styles/index.css';
 import { useTranslation } from 'react-i18next';
 
-import { AppRouter } from './provides/router/AppRouter';
+import { AppRouter } from './providers/router/AppRouter';
 
 const App = () => {
     const { t } = useTranslation();
     return (
         <div>
             <AppRouter />
-            {t('a')}
         </div>
     );
 };
