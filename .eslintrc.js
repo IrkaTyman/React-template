@@ -1,11 +1,4 @@
 module.exports = {
-    settings: {
-        react: {
-            pragma: 'React',
-            fragment: 'Fragment',
-            version: 'detect',
-        },
-    },
     env: {
         browser: true,
         es2021: true,
@@ -25,7 +18,7 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: 'latest',
+        ecmaVersion: '2020',
         sourceType: 'module',
     },
     rules: {
