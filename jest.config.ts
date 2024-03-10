@@ -19,9 +19,9 @@ const config: Config = {
         '^@shared/(.*)$': '<rootDir>/src/shared/$1',
 
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-            '<rootDir>/__mocks__/fileMock.js',
-        '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
-        '\\.svg$': '<rootDir>/__mocks__/svgMock.js',
+            '<rootDir>/__mocks__/fileMock.ts',
+        '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.ts',
+        '\\.svg$': '<rootDir>/__mocks__/svgMock.tsx',
     },
     transform: {
         '^.+\\.(j|t)sx?$': ['ts-jest', {isolatedModules: true}],
