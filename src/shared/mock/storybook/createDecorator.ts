@@ -1,7 +1,7 @@
 import { Decorator } from '@storybook/react';
 import * as H from 'history';
 
-import { AxiosMockOptions } from '@shared/config/axios/mockAxios';
+import { AxiosMockOptions } from '@shared/mock/axios/mockAxios';
 import { AxiosMockDecorator } from './AxiosMockDecorator';
 import { ResetAxiosMockDecorator } from './ResetAxiosMockDecorator';
 import { RouterDecorator } from './RouterDecorator';

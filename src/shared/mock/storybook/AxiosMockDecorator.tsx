@@ -1,6 +1,6 @@
 import {Decorator} from '@storybook/react';
 
-import {AxiosMockOptions, mockAxios} from '@shared/config/axios/mockAxios';
+import {AxiosMockOptions, mockAxios} from '@shared/mock/axios/mockAxios';
 
 /**
  * Мокает запросы axios

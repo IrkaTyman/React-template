@@ -1,6 +1,6 @@
 import {Decorator} from '@storybook/react';
 
-import {resetAxiosMock} from '@shared/config/axios/resetAxiosMock';
+import {resetAxiosMock} from '@shared/mock/axios/resetAxiosMock';
 
 /**
  * Сбрасывает все моки с http

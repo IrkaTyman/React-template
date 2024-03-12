@@ -1,7 +1,7 @@
 import {type Decorator} from '@storybook/react';
 import React from 'react';
-import {MemoryRouter, Route, Routes} from 'react-router-dom';
 import * as H from 'history';
+import { RouterWrapper } from '@shared/mock/axios/RouterWrapper';
 
 /**
  * Storybook-декоратор для работы React-Router
@@ -11,14 +11,6 @@ import * as H from 'history';
 export const RouterDecorator: (routePath: string, initialEntries?: H.LocationDescriptor[]) => Decorator =
     (routePath, initialEntries) => {
         return (function MemoryRouterWrapper(Story) {
-            return (
-                <MemoryRouter initialEntries={initialEntries}>
-                    <Routes>
-                        <Route path={routePath}>
-                            <Story/>
-                        </Route>
-                    </Routes>
-                </MemoryRouter>
-            );
+            return RouterWrapper(routePath,initialEntries)(<Story/>)
         });
     };
