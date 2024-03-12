@@ -1,7 +1,9 @@
 import type { Preview } from '@storybook/react';
 
-import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator';
 import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator';
+import { QueryDecorator } from '../../src/shared/config/storybook/QueryDecorator';
+import { I18NextDecorator } from '../../src/shared/config/storybook/I18NextDecorator';
+import { SuspenseDecorator } from '../../src/shared/config/storybook/SuspenseDecorator';
 
 const preview: Preview = {
     parameters: {
@@ -15,7 +17,9 @@ const preview: Preview = {
     },
     decorators: [
         StyleDecorator,
-        RouterDecorator,
+        QueryDecorator,
+        I18NextDecorator,
+        SuspenseDecorator,
     ],
 };
 
