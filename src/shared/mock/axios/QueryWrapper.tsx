@@ -1,6 +1,6 @@
 import React from 'react';
 import { QueryClientProvider } from '@tanstack/react-query';
-import { queryClient } from '@shared/config/query/queryClient';
+import { queryClient } from '@shared/config/query';
 
 /**
  * Тестовая оболочка для работы React Query

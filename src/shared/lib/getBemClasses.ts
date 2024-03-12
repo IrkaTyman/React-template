@@ -1,8 +1,7 @@
 import block from 'bem-css-modules';
 
 import { mixClasses } from './mixClasses';
-import { BemModificator } from '../types/BemModificator';
-import { CssModule } from '../types/CssModule';
+import { BemModificator, CssModule } from '../types/';
 
 export function getBemClasses(
     cssModule: CssModule,

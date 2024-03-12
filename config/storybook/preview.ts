@@ -1,9 +1,6 @@
 import type { Preview } from '@storybook/react';
 
-import { StyleDecorator } from '@shared/mock/storybook/StyleDecorator';
-import { QueryDecorator } from '@shared/mock/storybook/QueryDecorator';
-import { I18NextDecorator } from '@shared/mock/storybook/I18NextDecorator';
-import { SuspenseDecorator } from '@shared/mock/storybook/SuspenseDecorator';
+import { StyleDecorator, QueryDecorator, I18NextDecorator, SuspenseDecorator } from '@shared/mock/storybook';
 
 const preview: Preview = {
     parameters: {
