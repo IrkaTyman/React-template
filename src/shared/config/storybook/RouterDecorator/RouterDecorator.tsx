@@ -1,5 +1,5 @@
 import { type ReactRenderer } from '@storybook/react';
-import '@shared/styles/index.scss';
+import '../../../styles/index.css';
 import { type DecoratorFunction } from '@storybook/csf';
 import { BrowserRouter } from 'react-router-dom';
 

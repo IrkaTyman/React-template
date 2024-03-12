@@ -8,7 +8,7 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        defaultNS: 'translations',
+        defaultNS: 'translation',
         fallbackLng: 'ru',
         debug: __IS_DEV__,
         interpolation: {

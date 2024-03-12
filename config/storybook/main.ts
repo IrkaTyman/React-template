@@ -1,7 +1,9 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
 
 const config: StorybookConfig = {
-    stories: ['../../src/**/*.mdx', '../../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+    stories: [
+        '../../src/**/*.stories.@(js|jsx|ts|tsx)',
+    ],
     addons: [
         '@storybook/addon-links',
         '@storybook/addon-essentials',
@@ -16,10 +18,19 @@ const config: StorybookConfig = {
             },
         },
     },
+    swc: () => ({
+        jsc: {
+            transform: {
+                react: {
+                    runtime: 'automatic',
+                },
+            },
+        },
+    }),
     docs: {
         autodocs: 'tag',
     },
-    previewHead: (head) => `
+    previewHead: head => `
         ${head}
         <style>
             #storybook-root {
@@ -27,6 +38,6 @@ const config: StorybookConfig = {
                 width: 100%;
             }
         </style>
-    `
+    `,
 };
 export default config;
