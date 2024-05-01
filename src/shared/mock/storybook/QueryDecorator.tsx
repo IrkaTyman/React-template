@@ -1,6 +1,6 @@
 import React from 'react';
 import {type Decorator} from '@storybook/react';
-import { QueryWrapper } from '@shared/mock/axios/QueryWrapper';
+import { QueryWrapper } from '@shared/mock/jest/QueryWrapper';
 
 /**
  * Storybook-декоратор для работы React-Query
