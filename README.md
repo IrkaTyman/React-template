@@ -13,3 +13,9 @@
 8. Eslint + Stylelint
 9. CSS modules
 10. FSD архитектура
+
+### Дополнительные библиотеки
+1. react-tooltip
+2. copy-webpack-plugin - для копирования файлов локализации в сборку
+3. formik
+4. yup
