@@ -21,6 +21,10 @@
     top: 10%;
 }
 
+.FlexContainer_withSplitter.FlexContainer_gap_xxs > *:not(:last-child)::after {
+    right: calc(var(--space-xxs) / 2 * -1);
+}
+
 .FlexContainer_withSplitter.FlexContainer_gap_xs > *:not(:last-child)::after {
     right: calc(var(--space-xs) / 2 * -1);
 }
@@ -41,6 +45,14 @@
     right: calc(var(--space-xl) / 2 * -1);
 }
 
+.FlexContainer_withSplitter.FlexContainer_gap_xxl > *:not(:last-child)::after {
+    right: calc(var(--space-xxl) / 2 * -1);
+}
+
+.FlexContainer_withSplitter.FlexContainer_gap_xxxl > *:not(:last-child)::after {
+    right: calc(var(--space-xxxl) / 2 * -1);
+}
+
 .FlexContainer_direction_row {
     flex-direction: row;
 }
@@ -55,6 +67,10 @@
 
 .FlexContainer_direction_column-reverse {
     flex-direction: column-reverse;
+}
+
+.FlexContainer_gap_xxs {
+    gap: var(--space-xxs);
 }
 
 .FlexContainer_gap_xs {
@@ -75,6 +91,14 @@
 
 .FlexContainer_gap_xl {
     gap: var(--space-xl);
+}
+
+.FlexContainer_gap_xxl {
+    gap: var(--space-xxl);
+}
+
+.FlexContainer_gap_xxxl {
+    gap: var(--space-xxxl);
 }
 
 .FlexContainer_justifyContent_start {
@@ -118,9 +142,7 @@
 }
 
 .FlexContainer.FlexContainer_enableResize > * {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1 1 0;
 }
 
 .FlexContainer_height_auto {
@@ -166,6 +188,7 @@
 .FlexContainer_overflow_scroll.FlexContainer_direction_row {
     overflow-x: auto;
 }
+
 .FlexContainer_overflow_scroll.FlexContainer_direction_column {
     overflow-y: auto;
 }

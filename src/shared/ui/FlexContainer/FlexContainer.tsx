@@ -1,4 +1,4 @@
-import { createElement, FC, forwardRef, PropsWithChildren } from 'react';
+import { createElement, CSSProperties, FC, forwardRef, PropsWithChildren } from 'react';
 
 import { getBemClasses, typedMemo } from '@shared/lib';
 import { ClassNameProps, TestProps } from '@shared/types';
@@ -18,7 +18,7 @@ export type Props = PropsWithChildren &
         /**
          * Промежуток между элементами
          */
-        gap?: 'xs' | 's' | 'm' | 'l' | 'xl';
+        gap?: 'xxs' | 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl' | 'xxxl';
 
         /**
          * Расположение элементов
@@ -72,6 +72,11 @@ export type Props = PropsWithChildren &
          * HTML тэг, который будет использован в качестве контейнера
          */
         tag?: 'div' | 'header' | 'section' | 'nav' | 'aside' | 'article';
+
+        /**
+         * Стили
+         */
+        style?: CSSProperties;
     }>;
 
 export const FlexContainer: FC<Props> = typedMemo(forwardRef(function FlexContainer({
@@ -87,6 +92,7 @@ export const FlexContainer: FC<Props> = typedMemo(forwardRef(function FlexContai
     tag = 'div',
     children,
     className,
+    style,
     'data-testid': dataTestId = 'FlexContainer',
 }: Props, ref) {
     return createElement(
@@ -110,6 +116,7 @@ export const FlexContainer: FC<Props> = typedMemo(forwardRef(function FlexContai
                 className,
             ),
             'data-testid': dataTestId,
+            style,
         },
         children,
     );
