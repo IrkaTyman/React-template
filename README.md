@@ -13,3 +13,6 @@
 8. Eslint + Stylelint
 9. CSS modules
 10. FSD архитектура
+
+### Дополнительные библиотеки
+1. react-tooltip
