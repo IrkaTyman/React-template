@@ -1,6 +1,6 @@
-import { RouteProps } from 'react-router-dom';
+import { ConfigRouteProps } from '@shared/types';
 
-export const routeConfig: RouteProps[] = [
+export const routeConfig: ConfigRouteProps[] = [
     {
         path: '*',
         element: <p style={{ color: 'red' }}>Not found page</p>,
